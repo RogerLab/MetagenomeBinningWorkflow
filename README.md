@@ -1,8 +1,8 @@
-# Supervised Binning for Recovering Eukaryotic Genomes from Metagenomes
+# Binning Workflow for Recovering Eukaryotic Genomes from Metagenomes
 
 ## Overview
 
-This workflow is designed to guide you through recovering eukaryotic genomes from metagenomic datasets using supervised binning, based on the contigs classified as eukaryotic or unknown (EUnk) by Eukfinder.
+This workflow is designed to guide you through recovering eukaryotic genomes from metagenomic datasets based on the contigs classified as eukaryotic or unknown (EUnk) by Eukfinder.
 
 ### Summary of Approach:
 
@@ -258,9 +258,9 @@ Explanation:
 -----------
 
 
-### Step 6: Combine All Results and Perform Supervised Binning
+### Step 6: Combine All Results and Perform  Binning
 
-Run the main script, Supervised_Binning.py, to combine all parsed results and generate two FASTA files: the nuclear genome and the mitochondrial genome.
+Run the main script, Binning.py, to combine all parsed results and generate two FASTA files: the nuclear genome and the mitochondrial genome.
 
 6.1 Combine Results: Combine MyCC, Plast, BLAST, Metaxa2, and depth coverage results into a single table.
 
@@ -269,7 +269,7 @@ Run the main script, Supervised_Binning.py, to combine all parsed results and ge
 
    ```bash
    source activate python36-generic
-   python3 Supervised_Binning.py
+   python3 Binning.py
    ```
 
 Explanation:
